@@ -1,0 +1,1691 @@
+/* customizable snowflake styling */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+
+
+.song {
+    display: none;
+}
+
+body {
+    background-color: #FACDC9;
+}
+
+img {
+    width: 100%;
+}
+
+.balloon-border {
+    position: fixed;
+    top: 100%;
+    opacity: 0.5;
+    z-index: 99999999;
+}
+
+.area {
+    text-align: center;
+    font-size: 70px;
+    color: #C4515C;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: spin 2s ease-in-out infinite;
+    /* transform-origin: top center;  */
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+#nae {
+    text-transform: capitalize;
+}
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+    }
+}
+
+.type-wrap {
+    font-size: 25px;
+    color: #C4515C;
+
+}
+
+
+@media (min-width: 1200px) {
+    .cake {
+       padding-top: 400px;
+       transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    }
+    
+}
+
+@media (max-width: 1200px) and ( min-width: 768px) {
+    .cake {
+       padding-top: 500px;
+       transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .cake {
+       padding-top: 400px;
+       transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hjadsiiawsdhwehsfifhhwui {
+  font-family: "Grape Nuts", cursive;
+  /* background-color: #eee; */
+  text-align: center;
+  padding: 2em 1em;
+}
+@media (min-width: 1200px) {
+  .hjadsiiawsdhwehsfifhhwui {
+    font-family: "Grape Nuts", cursive;
+    /* background-color: #eee; */
+    text-align: center;
+    padding-top: 700px;
+  }
+    
+}
+@media (min-width: 768px) and (max-width:1159px) {
+  .hjadsiiawsdhwehsfifhhwui {
+    font-family: "Grape Nuts", cursive;
+    /* background-color: #eee; */
+    text-align: center;
+    padding-top: 1000px;
+  }
+    
+}
+@media (min-width: 1160px) and (max-width:1199px) {
+  .hjadsiiawsdhwehsfifhhwui {
+    font-family: "Grape Nuts", cursive;
+    /* background-color: #eee; */
+    text-align: center;
+    padding-top: 1100px;
+  }
+    
+}
+
+.gallery {
+  display: grid;
+  width: 100%;
+  max-width: 1002px;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+figure {
+  width: 300px;
+  perspective: 900px;
+}
+figure:nth-child(1) {
+  --imageUrl: url("img/image12_1.jpg");
+}
+figure:nth-child(3) {
+  --imageUrl: url("img/secondimage2.jpg");
+}
+
+figure:nth-child(4) {
+  --imageUrl: url("img/final1.jpg");
+}
+figure:nth-child(6) {
+  --imageUrl: url("img/image3_1.jpg");
+}
+figure:nth-child(5) {
+  --imageUrl: url("img/image7_2.jpg");
+}
+figure:nth-child(2) {
+  --imageUrl: url("img/firstdate.jpg");
+}
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+.imageRoll {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 1em 0.5em 2em #1234, 0 0 5em #1234 inset;
+}
+.imageRoll i {
+  position: absolute;
+  left: calc(100% - 1px);
+  width: 6px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: transform 0.6s var(--delay, 0s) ease-in-out;
+  background-image: linear-gradient(#0003, #0000 5% 95%, #0003), var(--imageUrl, "");
+  background-position-x: calc(var(--bpx, 0) + 1px);
+  background-size: 300px 300px;
+}
+.imageRoll > i {
+  left: 0;
+  width: 5px;
+}
+.imageRoll:hover i {
+  transform: rotateY(var(--angle, 0deg)) skewY(var(--skew, 0deg));
+  transition-delay: var(--delay2, 0s);
+}
+.imageRoll > i {
+  --bpx: 0px;
+  --delay: 0s;
+  --delay2: 0.6s;
+  --angle: -10deg;
+  --skew: 0deg;
+}
+.imageRoll > i > i {
+  --bpx: -5px;
+  --delay: 0.01s;
+  --delay2: 0.59s;
+  --angle: -10.1deg;
+  --skew: -0.1deg;
+}
+.imageRoll > i > i > i {
+  --bpx: -10px;
+  --delay: 0.02s;
+  --delay2: 0.58s;
+  --angle: -10.2deg;
+  --skew: -0.2deg;
+}
+.imageRoll > i > i > i > i {
+  --bpx: -15px;
+  --delay: 0.03s;
+  --delay2: 0.57s;
+  --angle: -10.3deg;
+  --skew: -0.3deg;
+}
+.imageRoll > i > i > i > i > i {
+  --bpx: -20px;
+  --delay: 0.04s;
+  --delay2: 0.56s;
+  --angle: -10.4deg;
+  --skew: -0.4deg;
+}
+.imageRoll > i > i > i > i > i > i {
+  --bpx: -25px;
+  --delay: 0.05s;
+  --delay2: 0.55s;
+  --angle: -10.5deg;
+  --skew: -0.5deg;
+}
+.imageRoll > i > i > i > i > i > i > i {
+  --bpx: -30px;
+  --delay: 0.06s;
+  --delay2: 0.54s;
+  --angle: -10.6deg;
+  --skew: -0.6deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i {
+  --bpx: -35px;
+  --delay: 0.07s;
+  --delay2: 0.53s;
+  --angle: -10.7deg;
+  --skew: -0.7deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i {
+  --bpx: -40px;
+  --delay: 0.08s;
+  --delay2: 0.52s;
+  --angle: -10.8deg;
+  --skew: -0.8deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -45px;
+  --delay: 0.09s;
+  --delay2: 0.51s;
+  --angle: -10.9deg;
+  --skew: -0.9deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -50px;
+  --delay: 0.1s;
+  --delay2: 0.5s;
+  --angle: -11deg;
+  --skew: -1deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -55px;
+  --delay: 0.11s;
+  --delay2: 0.49s;
+  --angle: -11.1deg;
+  --skew: -1.1deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -60px;
+  --delay: 0.12s;
+  --delay2: 0.48s;
+  --angle: -11.2deg;
+  --skew: -1.2deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -65px;
+  --delay: 0.13s;
+  --delay2: 0.47s;
+  --angle: -11.3deg;
+  --skew: -1.3deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -70px;
+  --delay: 0.14s;
+  --delay2: 0.46s;
+  --angle: -11.4deg;
+  --skew: -1.4deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -75px;
+  --delay: 0.15s;
+  --delay2: 0.45s;
+  --angle: -11.5deg;
+  --skew: -1.5deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -80px;
+  --delay: 0.16s;
+  --delay2: 0.44s;
+  --angle: -11.6deg;
+  --skew: -1.6deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -85px;
+  --delay: 0.17s;
+  --delay2: 0.43s;
+  --angle: -11.7deg;
+  --skew: -1.7deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -90px;
+  --delay: 0.18s;
+  --delay2: 0.42s;
+  --angle: -11.8deg;
+  --skew: -1.8deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -95px;
+  --delay: 0.19s;
+  --delay2: 0.41s;
+  --angle: -11.9deg;
+  --skew: -1.9deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -100px;
+  --delay: 0.2s;
+  --delay2: 0.4s;
+  --angle: -12deg;
+  --skew: -2deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -105px;
+  --delay: 0.21s;
+  --delay2: 0.39s;
+  --angle: -12.1deg;
+  --skew: -2.1deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -110px;
+  --delay: 0.22s;
+  --delay2: 0.38s;
+  --angle: -12.2deg;
+  --skew: -2.2deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -115px;
+  --delay: 0.23s;
+  --delay2: 0.37s;
+  --angle: -12.3deg;
+  --skew: -2.3deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -120px;
+  --delay: 0.24s;
+  --delay2: 0.36s;
+  --angle: -12.4deg;
+  --skew: -2.4deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -125px;
+  --delay: 0.25s;
+  --delay2: 0.35s;
+  --angle: -12.5deg;
+  --skew: -2.5deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -130px;
+  --delay: 0.26s;
+  --delay2: 0.34s;
+  --angle: -12.6deg;
+  --skew: -2.6deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -135px;
+  --delay: 0.27s;
+  --delay2: 0.33s;
+  --angle: -12.7deg;
+  --skew: -2.7deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -140px;
+  --delay: 0.28s;
+  --delay2: 0.32s;
+  --angle: -12.8deg;
+  --skew: -2.8deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -145px;
+  --delay: 0.29s;
+  --delay2: 0.31s;
+  --angle: -12.9deg;
+  --skew: -2.9deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -150px;
+  --delay: 0.3s;
+  --delay2: 0.3s;
+  --angle: -13deg;
+  --skew: -3deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -155px;
+  --delay: 0.31s;
+  --delay2: 0.29s;
+  --angle: -13.1deg;
+  --skew: -3.1deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -160px;
+  --delay: 0.32s;
+  --delay2: 0.28s;
+  --angle: -13.2deg;
+  --skew: -3.2deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -165px;
+  --delay: 0.33s;
+  --delay2: 0.27s;
+  --angle: -13.3deg;
+  --skew: -3.3deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -170px;
+  --delay: 0.34s;
+  --delay2: 0.26s;
+  --angle: -13.4deg;
+  --skew: -3.4deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -175px;
+  --delay: 0.35s;
+  --delay2: 0.25s;
+  --angle: -13.5deg;
+  --skew: -3.5deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -180px;
+  --delay: 0.36s;
+  --delay2: 0.24s;
+  --angle: -13.6deg;
+  --skew: -3.6deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -185px;
+  --delay: 0.37s;
+  --delay2: 0.23s;
+  --angle: -13.7deg;
+  --skew: -3.7deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -190px;
+  --delay: 0.38s;
+  --delay2: 0.22s;
+  --angle: -13.8deg;
+  --skew: -3.8deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -195px;
+  --delay: 0.39s;
+  --delay2: 0.21s;
+  --angle: -13.9deg;
+  --skew: -3.9deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -200px;
+  --delay: 0.4s;
+  --delay2: 0.2s;
+  --angle: -14deg;
+  --skew: -4deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -205px;
+  --delay: 0.41s;
+  --delay2: 0.19s;
+  --angle: -14.1deg;
+  --skew: -4.1deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -210px;
+  --delay: 0.42s;
+  --delay2: 0.18s;
+  --angle: -14.2deg;
+  --skew: -4.2deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -215px;
+  --delay: 0.43s;
+  --delay2: 0.17s;
+  --angle: -14.3deg;
+  --skew: -4.3deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -220px;
+  --delay: 0.44s;
+  --delay2: 0.16s;
+  --angle: -14.4deg;
+  --skew: -4.4deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -225px;
+  --delay: 0.45s;
+  --delay2: 0.15s;
+  --angle: -14.5deg;
+  --skew: -4.5deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -230px;
+  --delay: 0.46s;
+  --delay2: 0.14s;
+  --angle: -14.6deg;
+  --skew: -4.6deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -235px;
+  --delay: 0.47s;
+  --delay2: 0.13s;
+  --angle: -14.7deg;
+  --skew: -4.7deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -240px;
+  --delay: 0.48s;
+  --delay2: 0.12s;
+  --angle: -14.8deg;
+  --skew: -4.8deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -245px;
+  --delay: 0.49s;
+  --delay2: 0.11s;
+  --angle: -14.9deg;
+  --skew: -4.9deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -250px;
+  --delay: 0.5s;
+  --delay2: 0.1s;
+  --angle: -15deg;
+  --skew: -5deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -255px;
+  --delay: 0.51s;
+  --delay2: 0.09s;
+  --angle: -15.1deg;
+  --skew: -5.1deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -260px;
+  --delay: 0.52s;
+  --delay2: 0.08s;
+  --angle: -15.2deg;
+  --skew: -5.2deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -265px;
+  --delay: 0.53s;
+  --delay2: 0.07s;
+  --angle: -15.3deg;
+  --skew: -5.3deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -270px;
+  --delay: 0.54s;
+  --delay2: 0.06s;
+  --angle: -15.4deg;
+  --skew: -5.4deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -275px;
+  --delay: 0.55s;
+  --delay2: 0.05s;
+  --angle: -15.5deg;
+  --skew: -5.5deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -280px;
+  --delay: 0.56s;
+  --delay2: 0.04s;
+  --angle: -15.6deg;
+  --skew: -5.6deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -285px;
+  --delay: 0.57s;
+  --delay2: 0.03s;
+  --angle: -15.7deg;
+  --skew: -5.7deg;
+}
+.imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -290px;
+  --delay: 0.58s;
+  --delay2: 0.02s;
+  --angle: -15.8deg;
+  --skew: -5.8deg;
+}
+.imageRoll > figcaption {
+  position: absolute;
+  text-align: center;
+  padding-top: 2em;
+  padding-inline: 100px 25px;
+  z-index: -1;
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+}
+.imageRoll > figcaption strong {
+  display: block;
+}
+@media(min-width: 1200px) {
+  .changingto{
+    position: relative;
+    left: -10%;
+  
+  }
+}
+
+@media(min-width: 998px) and (max-width: 1199px) {
+  .finitejhw{
+    height: 400px;
+    width: auto;
+  
+  }
+  .kamaksjks{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+.mainpictureforworlkis {
+	-webkit-text-size-adjust: none;
+	color: #B2D665;
+	font-size: 1em;
+	font-family: "Helvetica Neue", Ubuntu, "WenQuanYi Micro Hei", Helvetica, "Hiragino Sans GB", "Microsoft JhengHei", "PMingLiU", Arial, sans-serif;
+	-webkit-font-smoothing:antialiased;
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	margin: 0px;
+	line-height: 1.6em;
+	padding: 0px;
+	background-color: #ffe1c7;
+	overflow-x: hidden;
+}
+#Frames, .Frame {
+	list-style: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#Frames {
+  margin: 5% 0;
+	width: 100%;
+}
+.Frame {
+	display: inline-block;
+	padding: 10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #2F2D2D #434040 #4F4C4C #434040;
+	background: #f5f5f5;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E5E4DF), to(#CDCDC6));
+	background-image: -webkit-linear-gradient(#E5E4DF, #CDCDC6);
+	background-image: -moz-linear-gradient(#E5E4DF, #CDCDC6);
+	background-image: -o-linear-gradient(#E5E4DF, #CDCDC6);
+	background-image: linear-gradient(#E5E4DF, #CDCDC6);
+	box-shadow: inset 0 2px 5px rgba(0,0,0,.6),0 5px 2px rgba(0,0,0,.1), 0 10px 20px rgba(0,0,0,.8);
+	position: relative;
+	overflow: hidden;
+}
+.Frame::before {
+	content: "";
+	position: absolute;
+	top: -175px;
+	right: -20%;
+	width: 400px;
+	height: 400px;
+	transform: rotateZ(-40deg);
+	-webkit-transform: rotateZ(-40deg);
+	-moz-transform: rotateZ(-40deg);
+	-o-transform: rotateZ(-40deg);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,.4)), to(rgba(255,255,255,0)));
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+}
+.Frame img {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #BBBAB4 #C7C7BF #E5E4DF #C7C7BF;
+	box-shadow:  0 -1px 1px rgba(0,0,0,.1), 0 1px 1px 1px rgba(255,255,255,.7);
+}
+
+
+
+
+.mainmeripyarri{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 200px;
+  color: aqua;
+
+flex-direction: column;
+}
+
+
+
+main {
+  margin: 0 auto;
+  /* padding: 0.875em 0.5em; */
+  max-width: 60vw;
+  /* background-color: blue; */
+  color: white;
+  font: 1.55em/1.375 segoe script, comic sans ms, cursive;
+}
+main * + * {
+  margin-top: 1.375em;
+}
+/* 
+.mymaintextdata{
+  max-width: 80vw;
+}
+
+.mymaintextdata h3{
+  color: black;
+  font-size: xx-large;
+  /* font-family: cursive; */
+  
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0 10%;
+  color: #57413b;
+  background-color: #fffcf5;
+  font: 1.25rem/1.5 'Roboto', sans-serif;
+} */
+
+.wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Dancing Script', cursive; 
+  padding: 20px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+
+.wrapper h1,.wrapper h2 {
+  margin: 0;
+  line-height: 1.25;
+  color:skyblue;
+}
+
+.wrapper h1 {
+  padding-bottom: 20px;
+  border-bottom: 6px ;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #fffcf5, 3px 3px;
+}
+
+.wrapper h2 {
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.wrapper p{
+  color: rgb(0, 58, 81);
+  font-size: large;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 450px) {
+  .wrapper h1 {
+    font-size: 4rem;
+  }
+  .wrapper h2 {
+    font-size: 2rem;
+  }
+}
+
+
+.gal1 {
+  --s: 150px; /* control the size */
+  --g: 10px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gal1 > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(10%);
+  transition: .35s linear;
+}
+.gal1 video{
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(10%);
+  transition: .35s linear;
+}
+.gal1 img:hover{
+  filter: contrast(100%);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+.gal1 video:hover{
+  filter: contrast(100%);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+
+
+.inter {
+   background-color: #FFE1C7;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding:10px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.wave1 {
+  float: left;
+  margin: 20px;
+  animation: wave1  ease-in-out 0.5s infinite alternate;
+  transform-origin: center -36px;
+}
+
+.wave1:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.wave1 img {
+  border: 5px dotted #013935;
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.wave1 figcaption {
+  text-align: center;
+  font-size: xx-large;
+  color: #013935;
+  font-weight: bolder;
+}
+
+.wave1:after{
+  content: '';
+  position: absolute;
+  width: 20px; 
+  height: 20px;
+  border: 1.5px solid #ffffff;
+  top: -10px; 
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+       
+.wave1:before{
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+        
+@keyframes wave1 {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+
+
+@media (min-width:600px) {
+  .fixed-img {
+    display: none;
+    position: absolute;
+    bottom: -5%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 370px;
+    border-radius: 10%;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-50px); /* Start above */
+    transition: opacity 0.8s ease-in-out, transform 2s ease-in-out;
+  }
+  .left-img {
+    left: 5%;
+    background-image: url('https://www.pngmart.com/files/4/Kakashi-PNG-Free-Download.png');
+  }
+  .right-img {
+      width: 300;
+      height: 350px;
+    right: 5%;
+    
+    background-image: url('img/img1_1.jpg');
+  }
+}
+.car1{
+  position: relative;
+}
+
+
+
+
+@media (max-width:599px) {
+  .fixed-img {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-50px); /* Start above */
+    transition: opacity 0.8s ease-in-out, transform 2s ease-in-out;
+  }
+  .left-img {
+    left: 5%;
+    background-image: url('https://www.pngmart.com/files/4/Kakashi-PNG-Free-Download.png');
+  }
+  .right-img {
+      width: 150;
+      height: 200px;
+    right: 5%;
+    
+    background-image: url('img/img1_1.jpg');
+  }
+}
+.mainhjwishdiq {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ background-color: #FFA1A1;
+  color: #fffefe;
+  overflow-x: hidden;
+}
+
+.debate-container {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.debate-text {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  margin: 100px 0;
+  font-size: 20px;
+  max-width: 600px;
+  transform: translateY(20px);
+}
+.left-text {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 0;
+}
+.right-text {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+.kakashicame{
+  /* max-width: 80vw; */
+  text-align: center;
+    margin-top: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem; /* Adjust for size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(59, 0, 0);
+  
+  
+}
+.pookie {
+  width: 200px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  transition: transform 0.3s ease-in-out;
+  /* overflow: hidden; */
+}
+.pookie:hover{
+  transform: scale(1.5);
+}
+
+/* fallback until better support for mask-border */
+@supports not (-webkit-mask-box-image: var(--_m)) { 
+  img {
+   --_m:
+     radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+     radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+     linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+   -webkit-mask: var(--_m);
+           mask: var(--_m);
+  }
+}
+
+.pookieincont {
+  margin: 0;
+margin: 50px;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  gap: 30px;
+  /* background: pink; */
+  filter: drop-shadow(0 0 10px #ff3e60)
+  
+}
+
+.leftImg, .rightImg {
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+/* Defining the theme for the card: colors, fonts, spacing. 
+This uses CSS variables - so you only have to change the colors in one place */ 
+:root {
+  /* The color for your card background and background pattern */ 
+  --background: #F3F0D7;
+  --background-decor: #DBD0C0;
+  
+
+  /* Colors for the elements on your card */ 
+  --banner-bg: #1C0C5B;
+  --banner-txt: white;
+
+  /* Message area colors */ 
+  --message-bg: #F1EDE9;
+  --message-line: #94ACD4;
+  --message-txt: #333333;
+
+  /* Fonts */ 
+  --font-banner: 'Abril Fatface', cursive;
+  --font-text: 'Shadows Into Light', cursive;
+
+  /* Space and other details */
+  --space: 16px;
+  --space-xsm: 4px;
+  --space-sm: 8px;
+  --space-lg: 24px;
+  --space-xlg: 48px;
+}
+
+/* Base template configurations */ 
+/* body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+
+  /* background color - here we are using the variable we created earlier! */ 
+  /* background-color: var(--background);
+
+  /* background pattern - remove the lines below and paste the new code if you want to use a different style */ 
+  /* background-image: radial-gradient(var(--background-decor) 20%, transparent 0), radial-gradient(var(--background-decor) 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px; */
+
+/* } */ 
+
+.bday-card {
+  max-width: 420px;
+  height: 100%;
+  padding-top: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bday-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 240px;
+  padding: var(--space-sm) var(--space-sm) var(--space-xlg);
+  background: white;
+  border-radius: 4px;
+  box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
+
+  /* Edit the Translate property below to adjust the position of your picture */ 
+  transform: rotate(5deg) translate(20px, 45px);
+}
+
+.bday-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bday-decor--container {
+  position: relative;
+}
+
+.bday-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 42px;
+  z-index: 1;
+
+  /* Play around with those properties to change your banner styling */ 
+  color: var(--banner-txt);
+  font-family: var(--font-banner);
+  text-transform: uppercase;
+  transform: rotate(-5deg);
+  gap: var(--space-sm) 0;
+}
+
+.bday-banner span {
+  background: var(--banner-bg);
+  padding: var(--space) var(--space-lg);
+  flex-grow: 0;
+}
+
+.bday-banner span:nth-child(2) {
+  margin-left: var(--space-lg);
+}
+
+
+.bday-message {
+  max-width: 80%;
+  padding: 35px var(--space);
+  font-family: var(--font-text);
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--message-txt);
+  background-color: var(--message-bg);
+}
+
+/* Paper */
+.bday-message--paper {
+  background: repeating-linear-gradient(var(--message-bg), var(--message-bg) 31px, var(--message-line) 31px, var(--message-line) 32px);
+  box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
+}
+/* End - Paper */
+
+/* Block right */
+.bday-message--block-right {
+  position: relative;
+}
+
+.bday-message--block-right::before {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: -1;
+}
+/* End - Block right */
+
+/* Block left */
+.bday-message--block-left {
+  position: relative;
+}
+
+.bday-message--block-left::before {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: -1;
+}
+/* End - Block left */
+
+
+.bday-decor {
+  /* Emojis are text - so here we are setting a font-size to make them bigger */ 
+  font-size: 96px;
+}
+
+/* Positioning for the emojis - play around with the values to change the placement of your decorations */ 
+.bday-decor--top-right { 
+  position: absolute;
+  bottom: -70px;
+  right: -20px;
+}
+
+.bday-decor--top-left {
+  position: absolute;
+  bottom: 0px;
+  left: -25px;
+}
+
+.bday-decor--bottom-right {
+  position: absolute; 
+  right: 20px;
+}
+
+/* Animations */ 
+
+/* Here we designate an specific animation to an specific element using a class. We have a defined name, time and iteration-count for each animation. We can also define the origin point from which the animation will happen - the default is the center. */  
+.zoom-left-in-out {
+  animation-name: zoom-left-in-out;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+  transform-origin: left bottom;
+}
+
+/* Here we specify what will change on the element when they animate */ 
+@keyframes zoom-left-in-out {
+  /* Animation will start and end with the same settings */ 
+  0%, 100% {
+    transform: scale(0.95) rotate(2deg);
+  }
+
+  /* Animation will reach those settings 50% into the duration time we set on the declaration */
+  50% {
+    transform: scale(1) rotate(-2deg);
+  }
+}
+
+/* pulse */ 
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+/* pulse - End */
+
+/* float */ 
+.float {
+  animation-name: float;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+/* float - End */
+
+/* spin */ 
+.spin {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+
+/* spin - End */
+
+
+.container12{
+  position: relative;
+}
+
+.valentines {
+  position: relative;
+  top:50px;
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+
+@keyframes up {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+
+.envelope {
+  position: relative;
+  width: 300px;
+  height:200px;
+  background-color: #f08080; 
+}
+
+.envelope:before {
+  background-color: #f08080; 
+  content:"";
+  position: absolute;
+  width: 212px;
+  height: 212px;
+  transform: rotate(45deg);
+  top:-105px;
+  left:44px;
+  border-radius:30px 0 0 0;
+}
+
+.card12 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 270px;
+  height: 170px;
+  top:5px;
+  left:15px;
+  box-shadow: -5px -5px 100px rgba(0,0,0,0.4); 
+}
+
+.card12:before {
+  content:"";
+  position: absolute;
+  border:3px solid #003049;
+  border-style: dotted;
+  width: 240px;
+  heighT: 140px;
+  left:12px;
+  top:12px;
+}
+
+.text {
+  position: absolute;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  text-align: center;
+  line-height:25px;
+  top:19px;
+  left:85px;
+  color: #003049;
+  
+}
+.biee{
+  width: 100px;
+
+}
+.imagebii{
+  margin-top: 40px;
+}
+.mainofall{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.heart {
+  /* background-color: #d62828; */
+  display: inline-block;
+  /* height: 0px; */
+  font-size: xx-large;
+
+  position: relative;
+  top: -29px;
+  left:110px;
+  
+
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  /* background-color: #d62828; */
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+.hearts {
+  position: absolute  
+}
+
+.one, .two, .three, .four, .five {
+  background-color: pink;
+  display: inline-block;
+  height: 10px;
+  margin: 0 10px;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 10px;
+  top:50px;
+}
+
+.one:before,
+.one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, .five:before, .five:after {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.one:before, .two:before, .three:before, .four:before, .five:before {
+  top: -5px;
+  left: 0;
+}
+
+.one:after, .two:after, .three:after, .four:after, .five:after {
+  left: 5px;
+  top: 0;
+}
+  
+.one {
+  left:10px;
+  animation: heart 1s ease-out infinite; 
+}
+
+.two {
+  left:30px;
+  animation: heart 2s ease-out infinite; 
+}
+
+.three {
+  left:50px;
+  animation: heart 1.5s ease-out infinite;
+}
+
+.four {
+  left:70px;
+  animation: heart 2.3s ease-out infinite;
+}
+
+.five {
+  left:90px;
+  animation: heart 1.7s ease-out infinite;
+}
+
+@keyframes heart {
+  0%{
+    transform: translateY(0) rotate(-45deg) scale(0.3);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-150px) rotate(-45deg) scale(1.3);
+    opacity: 0.5;
+  }
+}
+
+.front {
+  position: absolute;
+  border-right: 180px solid #f4978e;
+  border-top: 95px solid transparent;
+  border-bottom: 100px solid transparent;
+  left:120px;
+  top:5px;
+  width:0;
+  height:0;
+  z-index:10;
+}
+
+.front:before {
+  position: absolute;
+  content:"";
+  border-left: 300px solid #f8ad9d;
+  border-top: 195px solid transparent;
+  left:-120px;
+  top:-95px;
+  width:0;
+  height:0;
+}
+
+.shadow {
+  position: absolute;
+  width: 330px;
+  height: 25px;
+  border-radius:50%;
+  background-color: rgba(0,0,0,0.3);
+  top:265px;
+  left:-15px;
+  animation: scale 3s linear infinite;
+  z-index:-1;
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.85);
+  }
+}
+.deta{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fae1dd;
+  
+}
+.wave-container{
+  display: inline-block;
+}
+
+.wave-text span {
+  display: inline-block;
+  font-size: 2.9rem;
+  animation: wave 2s ease-in-out infinite;
+  /* color:rgb(255, 127, 148) ; */
+  color: #F8312F;
+}
+.pinkdata h2{
+  color: #ff6461;
+}
+
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(6) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(7) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(8) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(9) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(10) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(11) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(12) {
+  animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(13) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(14) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(15) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(16) {
+  animation-delay: 0s;
+}
+
+.wave-text span:nth-child(17) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(18) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(19) {
+  animation-delay: 0s;
+}
+
+
+
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+#minuu {
+  transition: opacity 0.3s ease-in-out;
+}
